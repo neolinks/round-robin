@@ -4,6 +4,7 @@
 [![License](https://poser.pugx.org/marcelotk15/round-robin/license)](https://packagist.org/packages/marcelotk15/round-robin)
 
 Round-Robin is an easy way to create schedule with round-robin(rr) technique. I used the mnito's base code for this. Look here: https://github.com/mnito/round-robin
+##  SUPPORT PHP 5.4 >  
 
 ## Installation
 1) In order to install Laravel Round-Robin, just add the following to your composer.json. Then run `composer update`:
