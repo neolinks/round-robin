@@ -56,7 +56,7 @@ class Schedule implements IteratorAggregate
      *
      * @return array
      */
-    public function master(): array
+    public function master()
     {
         return $this->master;
     }
@@ -86,7 +86,7 @@ class Schedule implements IteratorAggregate
      *
      * @return array
      */
-    public function forTeam($team): array
+    public function forTeam($team)
     {
         if (empty($this->team)) {
             $this->makeTeam();
@@ -102,7 +102,7 @@ class Schedule implements IteratorAggregate
      *
      * @return array
      */
-    public function get($team = null): array
+    public function get($team = null)
     {
         if (!is_null($team)) {
             return $this->forTeam($team);
@@ -116,7 +116,7 @@ class Schedule implements IteratorAggregate
      *
      * @return array
      */
-    public function teams(): array
+    public function teams()
     {
         if (empty($this->team)) {
             $this->makeTeam();
@@ -134,7 +134,7 @@ class Schedule implements IteratorAggregate
      *
      * @return array
      */
-    final public function __invoke($team = null): array
+    final public function __invoke($team = null)
     {
         return $this->get($team);
     }
